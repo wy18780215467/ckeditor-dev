@@ -719,32 +719,6 @@
 			};
 
 			/**
-			 * Updates status of passed element.
-			 *
-			 * @since 4.9.0
-			 * @private
-			 * @param {CKEDITOR.ui.button/CKEDITOR.ui.richCombo}
-			 * @member CKEDITOR.ui.balloonToolbarView
-			 */
-			CKEDITOR.ui.balloonToolbarView.prototype._updateStatus = function( item ) {
-				if ( item.getState() == CKEDITOR.TRISTATE_ON ) {
-					return;
-				}
-
-				var state = item.modes[ editor.mode ] ? CKEDITOR.TRISTATE_OFF : CKEDITOR.TRISTATE_DISABLED;
-
-				if ( editor.readOnly && !item.readOnly )
-					state = CKEDITOR.TRISTATE_DISABLED;
-
-				item.setState( state );
-				item.setValue( '' );
-
-				// Let plugin to disable button.
-				if ( state != CKEDITOR.TRISTATE_DISABLED && item.refresh )
-					item.refresh();
-			};
-
-			/**
 			 * Renders provided UI elements inside of the view.
 			 *
 			 * @param {CKEDITOR.ui.button[]/CKEDITOR.ui.richCombo[]} items Array of UI elements objects.
@@ -785,11 +759,10 @@
 					element.setAttribute( 'draggable', 'false' );
 					this.registerFocusable( element );
 				}, this );
-
 				// We need to initially set status of richCombo items.
 				CKEDITOR.tools.array.forEach( keys, function( itemKey ) {
 						if ( CKEDITOR.ui.richCombo && items[ itemKey ] instanceof CKEDITOR.ui.richCombo ) {
-							this._updateStatus( items[ itemKey ] );
+							( items[ itemKey ] ).updateState( editor );
 						}
 					}, this );
 			};
