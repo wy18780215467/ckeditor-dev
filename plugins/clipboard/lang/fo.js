@@ -8,5 +8,5 @@ CKEDITOR.plugins.setLang( 'clipboard', 'fo', {
 	cut: 'Kvett',
 	cutError: 'Trygdaruppseting alnótskagans forðar tekstviðgeranum í at kvetta tekstin. Vinarliga nýt knappaborðið til at kvetta tekstin (Ctrl/Cmd+X).',
 	paste: 'Innrita',
-	pasteNotification: 'Your browser doesn\'t allow you to paste this way. Press %1 to paste.' // MISSING
+	pasteNotification: 'Press %1 to paste. Your browser doesn\'t support pasting with the toolbar button or context menu option.' // MISSING
 } );

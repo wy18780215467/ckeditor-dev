@@ -8,5 +8,5 @@ CKEDITOR.plugins.setLang( 'clipboard', 'eo', {
 	cut: 'Eltondi',
 	cutError: 'La sekurecagordo de via TTT-legilo ne permesas, ke la redaktilo faras eltondajn operaciojn. Bonvolu uzi la klavaron por tio (Ctrl/Cmd-X).',
 	paste: 'Interglui',
-	pasteNotification: 'Your browser doesn\'t allow you to paste this way. Press %1 to paste.' // MISSING
+	pasteNotification: 'Press %1 to paste. Your browser doesn\'t support pasting with the toolbar button or context menu option.' // MISSING
 } );

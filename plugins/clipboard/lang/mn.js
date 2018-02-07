@@ -8,5 +8,5 @@ CKEDITOR.plugins.setLang( 'clipboard', 'mn', {
 	cut: 'Хайчлах',
 	cutError: 'Таны browser-ын хамгаалалтын тохиргоо editor-д автоматаар хайчлах үйлдэлийг зөвшөөрөхгүй байна. (Ctrl/Cmd+X) товчны хослолыг ашиглана уу.',
 	paste: 'Буулгах',
-	pasteNotification: 'Your browser doesn\'t allow you to paste this way. Press %1 to paste.' // MISSING
+	pasteNotification: 'Press %1 to paste. Your browser doesn\'t support pasting with the toolbar button or context menu option.' // MISSING
 } );

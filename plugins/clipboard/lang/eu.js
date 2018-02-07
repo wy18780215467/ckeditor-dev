@@ -8,5 +8,5 @@ CKEDITOR.plugins.setLang( 'clipboard', 'eu', {
 	cut: 'Ebaki',
 	cutError: 'Zure web nabigatzailearen segurtasun ezarpenek ez dute baimentzen testuak automatikoki moztea. Mesedez teklatua erabil ezazu (Ctrl/Cmd+X).',
 	paste: 'Itsatsi',
-	pasteNotification: 'Your browser doesn\'t allow you to paste this way. Press %1 to paste.' // MISSING
+	pasteNotification: 'Press %1 to paste. Your browser doesn\'t support pasting with the toolbar button or context menu option.' // MISSING
 } );
